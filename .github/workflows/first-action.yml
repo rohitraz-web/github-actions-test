@@ -1,0 +1,17 @@
+# Defining the name of the workflow
+name: First workflow
+
+#defining when the workflow will be run using the on command and the event or list of event name
+on: workflow_dispatch
+
+#Defining the jobs in the workflow
+jobs:
+  #giving the job as name which is not cocurrent
+  first-job:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: First greeting
+        run: echo "hello world"
+      - name: Good Bye
+        run: echo "good bye" 
+    
